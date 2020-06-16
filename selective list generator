@@ -1,0 +1,1 @@
+L2 = [x.lower() for x in L1 if isinstance(x,str)==1]
