@@ -1,0 +1,11 @@
+def findMinAndMax(L):  
+     if len(L)==0:
+        return (None,None)
+     x2=x1=L[0] 
+     for x in L:
+        if x>x1:
+           x1=x
+     for x in L:
+        if x<x2:
+           x2=x
+     return (x2,x1)
