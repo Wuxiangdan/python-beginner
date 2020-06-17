@@ -1,0 +1,13 @@
+def str2float(s):
+    b=-1
+    c=1
+    D={'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}
+    def ch(a):
+        return D[a]
+    a=[x for x in s if x!='.']
+    def fn (x,y):
+        return 10*x+y
+    while s[b]!='.':
+        b=b-1
+        c=c*10
+    return reduce(fn,map(ch,a))/c
