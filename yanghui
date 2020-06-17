@@ -1,0 +1,43 @@
+def triangles():
+    p = [1]
+    while True:
+        yield p
+        p = [1] + [p[i] + p[i+1] for i in range(len(p)-1)] + [1]
+n = 0
+results = []
+for t in triangles():
+    results.append(t)
+    n = n + 1
+    if n == 9:
+        break
+for t in results
+    print(t)
+#
+def triangles():
+    a=[1]
+    yield a
+    a=[1,1]
+    yield a
+    n=2
+    while n<100:
+        k=0
+        b=list(range(n))
+        while k<n:
+             b[k]=a[k] 
+             k+=1
+        x=1
+        while x<n:
+             a[x]=b[x-1]+b[x]
+             x=x+1
+        a.insert(n,1)
+        n=n+1
+        yield a
+ n = 0
+results = []
+for t in triangles():
+    results.append(t)
+    n = n + 1
+    if n == 9:
+        break
+for t in results
+    print(t)
